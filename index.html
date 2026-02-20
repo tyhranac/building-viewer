@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Building Viewer</title>
+
+    <!-- Load Calcite components from CDN -->
+    <script
+      type="module"
+      src="https://js.arcgis.com/calcite-components/3.3.3/calcite.esm.js"
+    ></script>
+
+    <!-- Load the ArcGIS Maps SDK for JavaScript -->
+    <script src="https://js.arcgis.com/4.34/"></script>
+
+    <!-- Load Map components from CDN-->
+    <script
+      type="module"
+      src="https://js.arcgis.com/4.34/map-components/"
+    ></script>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <arcgis-scene item-id="f477c289e93347aba6a0c052bfe0e0a4">
+      <arcgis-zoom slot="top-left"></arcgis-zoom>
+      <arcgis-navigation-toggle slot="top-left"></arcgis-navigation-toggle>
+      <arcgis-compass slot="top-left"> </arcgis-compass>
+      <arcgis-building-explorer slot="top-right"></arcgis-building-explorer>
+    </arcgis-scene>
+
+    <script type="module">
+      const viewElement = document.querySelector("arcgis-scene");
+      await viewElement.viewOnReady();
+
+      viewElement.map.allLayers.forEach((layer) => {
+        if (layer.title === "Esri Building E Demo") {
+          // Explore building components in the layer using the BuildingExplorer
+          const buildingExplorer = document.querySelector(
+            "arcgis-building-explorer",
+          );
+          buildingExplorer.layers = [layer];
+        }
+      });
+    </script>
+  </body>
+</html>
