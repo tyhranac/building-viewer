@@ -1,0 +1,70 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.serif-text {
+  font-family: "Merriweather", serif;
+}
+
+.sans-serif-text {
+  font-family: "Google Sans", sans-serif;
+}
+
+.title-text {
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+}
+
+.home-link {
+  cursor: pointer;
+}
+
+.subtitle-text {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(235, 235, 235);
+}
+
+.body-text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+  text-shadow: rgb(70, 70, 70) 1px 1px 5px;
+  color: rgb(255, 255, 255);
+}
+
+.floating-pane {
+  width: 400px;
+  height: 80%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 8%;
+}
+
+.slide-link {
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.slide-link:hover {
+  color: rgb(220, 240, 255);
+}
