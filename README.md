@@ -1,0 +1,1 @@
+This repo contains resources/demo files from a brief introduction to GIS web development using the ArcGIS JavaScript SDK. It was originally presented as 3 1-hour sessions, spread across 3 days, so if you'd like to follow along, just read each day's doc file (Day 1, Day 2, [Day 3](./docs/2-expanding-on-building-viewer.md)) + reference associated code in each day's folder.
