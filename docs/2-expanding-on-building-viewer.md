@@ -266,7 +266,7 @@ Here are the structural and functional changes (responsible for adding content t
 </script>
 ```
 
-And here are the styling changes (responsible for changing the appearance of our content) in the `<head>` > `style>` section of our HTML document:
+And here are the styling changes (responsible for changing the appearance of our content) in the `<head>` > `<style>` section of our HTML document:
 
 ```css
 .home-link {
