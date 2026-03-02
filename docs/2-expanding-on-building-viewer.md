@@ -161,9 +161,7 @@ And here are the styling changes (responsible for changing the appearance of our
 
 Lastly, for today, we'll add back in some of the interaction we lost when we simplified and customized the view (this is what we'll spend most of next week on as well). Let's make our landing/homepage text dynamic, highlighting the features of the building it calls out:
 
-<video aria-label="Demonstration of dynamic text linking to Scene View Slides" width="800" controls>
-  <source src="./assets/dynamic-overview-text.mp4" type="video/mp4">
-</video>
+![Screen recording of dynamic text/zoom to building elements](./assets/dynamic-overview-text.gif)
 
 Here are the structural and functional changes (responsible for adding content to our web app and making it interactable) in the `<body>` section of our HTML document:
 
