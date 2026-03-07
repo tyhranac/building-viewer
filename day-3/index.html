@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Building Viewer</title>
+
+    <!-- Load Calcite components from CDN -->
+    <script
+      type="module"
+      src="https://js.arcgis.com/calcite-components/3.3.3/calcite.esm.js"
+    ></script>
+
+    <!-- Load the ArcGIS Maps SDK for JavaScript -->
+    <script src="https://js.arcgis.com/4.34/"></script>
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.34/esri/themes/light/main.css"
+    />
+
+    <!-- Load Map components from CDN-->
+    <script
+      type="module"
+      src="https://js.arcgis.com/4.34/map-components/"
+    ></script>
+
+    <!-- Custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <arcgis-scene item-id="25753f9c0d3b451d8c97273e90b61b95" popup-disabled>
+      <nav>
+        <h1>
+          <a href="/" class="serif-text subtitle-text link">Overview</a>
+        </h1>
+        <h1 id="levels" class="serif-text subtitle-text link">
+          <a href="/levels/" class="serif-text subtitle-text link">Levels</a>
+        </h1>
+      </nav>
+      <div class="floating-pane">
+        <h2
+          id="home"
+          class="serif-text title-text link"
+          role="button"
+          tabindex="0"
+        >
+          ESRI Building E
+        </h2>
+        <h2 class="serif-text subtitle-text">by DLR Group</h2>
+        <p class="sans-serif-text body-text">
+          This four-story, 115,000 SF building initially houses 300 employees,
+          but will expand to a maximum of over 400 employees as the company
+          continues to grow. 61 underground covered parking spaces supplement
+          453 adjacent surface parking spaces.
+          <span
+            class="slide-link"
+            data-slide-title="Parking Lot Entrance"
+            role="button"
+            tabindex="0"
+            title="Go to Parking Lot Entrance"
+            >Two</span
+          >
+          <span
+            class="slide-link"
+            data-slide-title="Walkway Entrance"
+            role="button"
+            tabindex="0"
+            title="Go to Walkway Entrance"
+            >entries</span
+          >
+          provide easy access from both the parking and the nearest campus
+          building. That campus connection is emphasized with a new pedestrian
+          bridge that crosses the Mission Channel waterway. Combining
+          cast-in-place concrete and a structural steel system brought both
+          efficiencies in cost and schedule, and design flexibility with minimal
+          column interiors.
+        </p>
+      </div>
+    </arcgis-scene>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

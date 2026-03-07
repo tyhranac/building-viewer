@@ -1,0 +1,119 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.serif-text {
+  font-family: "Merriweather", serif;
+}
+
+.sans-serif-text {
+  font-family: "Google Sans", sans-serif;
+}
+
+.title-text {
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.subtitle-text {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(235, 235, 235);
+}
+
+.body-text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+  text-shadow: rgb(70, 70, 70) 1px 1px 5px;
+  color: rgb(255, 255, 255);
+}
+
+.floating-pane {
+  width: 400px;
+  height: 80%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 8%;
+}
+
+#building-explorer {
+  display: inline-flex;
+  justify-content: center;
+  height: 34%;
+  min-height: 0;
+  box-sizing: border-box;
+  border: 2px solid rgba(28, 28, 28, 0.8);
+  border-radius: 18px;
+  background: rgba(84, 84, 84, 0.6);
+  backdrop-filter: blur(10px);
+  --calcite-ui-text-1: rgb(235, 235, 235);
+  --calcite-icon-color: rgb(235, 235, 235);
+  --esri-widget-background-color: transparent;
+}
+
+#building-explorer * {
+  font-family: "Google Sans", sans-serif;
+}
+
+#building-explorer [icon="x"] {
+  --calcite-icon-color: rgb(28, 28, 28);
+}
+
+#building-explorer .esri-building-level-picker-label,
+#building-explorer .esri-building-level-picker-label--empty {
+  color: var(--calcite-ui-text-1);
+}
+
+#building-explorer .esri-building-level-picker-label--active {
+  color: var(--calcite-ui-text-1);
+}
+
+#building-explorer .esri-building-explorer {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  overflow: auto;
+}
+
+#building-explorer .esri-widget__heading {
+  display: none;
+}
+
+#building-explorer .esri-widget {
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
