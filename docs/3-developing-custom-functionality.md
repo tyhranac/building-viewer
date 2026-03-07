@@ -156,7 +156,7 @@ We'll also add an ID to the home link element:
 </body>
 ```
 
-> Note: Now that we other elements on our page, the building title home link is no longer the most important in this pages hierarchy, so we'll switch it from `<h1>` to `<h2>`.
+> Note: Now that we have other elements on our page, the building title home link is no longer the most important in this pages hierarchy, so we'll switch it from `<h1>` to `<h2>`.
 
 Since element IDs, unlike classes, must be unique in **HTML**, this allows us to be more specific with what we're selecting in our **JavaScript**:
 
