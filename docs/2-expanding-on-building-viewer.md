@@ -56,13 +56,13 @@ We'll also update our code from last week by removing some of the default UI ele
 
 So far, our Building Viewer web app has consisted of a single view with all the interactivity coming from components stacked on it. This can be a little overwhelming for visitors not accustomed to Esri's tools. To address this, we'll break up functionality across multiple views, creating a guided experience for visitors, with just the essential information on the landing/homepage view and more complex interactive features broken up across other views.
 
-### Home / Overview
+### Home Page / Overview
 
-We've already simplified the scene -- now let's create a landing/homepage view with some contextural information for visitors:
+We've already simplified the scene -- now let's create a landing/homepage view with some contextual information for visitors:
 
 ![Screenshot of stylized Building Viewer web app landing/homepage](./assets/overview-building-viewer.png)
 
-We haven't actually added in multi-view navigation yet (that's what we're leaving room for at the top), but we do have a nice, welcoming landing/homepage view now. To accomlish this, we re-added some elements to the `<arcgis-scene>` component, but instead of using Esri's default componenents, we created and styled our own.
+We haven't actually added in multi-view navigation yet (that's what we're leaving room for at the top), but we do have a nice, welcoming landing/homepage view now. To accomplish this, we re-added some elements to the `<arcgis-scene>` component, but instead of using Esri's default components, we created and styled our own.
 
 Here are the structural changes (responsible for adding content to our web app) in the `<body>` section of our HTML document:
 
@@ -284,7 +284,7 @@ And here are the styling changes (responsible for changing the appearance of our
 
 ### Refactor
 
-The last was our most substantial change yet, and all these edits are starting to accumulate into a long, hard to read HTML document. We'll wrap today up with a quick _refactor_. In development, a _refactor_ or _refactoring_ involves organizational updates to a code base that don't change any functionality. We'll refactor our Building Viewer web app by moving our styling (`CSS`) and custom functionality/script (`JavaScript`) to separate files.
+The last was our most substantial change yet, and all these edits are starting to accumulate into a long, hard to read HTML document. We'll wrap today up with a quick _refactor_. In development, a _refactor_ or _refactoring_ involves organizational updates to a code base that don't change any functionality. We'll refactor our Building Viewer web app by moving our styling (**CSS**) and custom functionality/script (**JavaScript**) to separate files.
 
 Now our HTML document looks like this:
 
@@ -365,7 +365,7 @@ Now our HTML document looks like this:
 </html>
 ```
 
-No `CSS` or `JavaScript` anymore! Instead, we import both from standalone files:
+No **CSS** or **JavaScript** anymore! Instead, we import both from standalone files:
 
 ```css
 html,
