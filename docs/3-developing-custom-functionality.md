@@ -305,7 +305,7 @@ const buildingExplorer = new BuildingExplorer({
 });
 ```
 
-> Bonus: Follow this template/workflow for the other features, creating new pages/views for construction phase and discipline functionality. This would involves adding new pages (directory + `index.html`) and navigation (`<a>` elements in `<nav>`) like we did for levels and then building customized Building Explorer widgets for each.
+> Bonus: Follow this template/workflow for the other features, creating new pages/views for construction phase and discipline functionality. This would involve adding new pages (directory + `index.html`) and navigation (`<a>` elements in `<nav>`) like we did for levels and then building customized Building Explorer widgets for each.
 
 ![Building Explorer widget with Level filters in Esri's default styling](./assets/unstyled-level-filtering.png)
 
