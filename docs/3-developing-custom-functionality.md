@@ -237,7 +237,7 @@ To re-add the level filtering functionality from Day 1, we'll re-introduce the [
 </arcgis-scene>
 ```
 
-We'll build it in a separate **JavaScript** style -- create a file named `levels.js` in `/src/`:
+We'll build it in a separate **JavaScript** file -- create a file named `levels.js` in `/src/`:
 
 ```js
 const [BuildingExplorer, BuildingExplorerViewModel] = await Promise.all([
